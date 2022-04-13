@@ -1,6 +1,6 @@
 import java.util.Random;
 
-abstract class AccountHolder
+public abstract class AccountHolder
 {
    protected int ID;
    protected String address;

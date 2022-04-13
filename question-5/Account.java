@@ -11,12 +11,14 @@ public class Account
 
    public double deposit(double amt)
    {
-      return balance + amt;
+      balance += amt;
+      return balance;
    }
 
    public double withdraw(double amt)
    {
-      return balance - amt;
+      balance -= amt;
+      return balance;
    }
 
    public double getBalance()

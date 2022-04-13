@@ -13,7 +13,7 @@ abstract class AccountHolder
 
    public static int getNextID()
    {
-      int nextID = new Random().nextInt(1000000 - 1) + 1;
+      int nextID = new Random().nextInt((1000000 - 1) + 1) + 1;
       return nextID;
    }
 }

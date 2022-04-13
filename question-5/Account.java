@@ -1,7 +1,7 @@
 public class Account
 {
    private AccountHolder holder;
-   private double balance = 0.0;
+   private double balance = 0;
 
    public Account(double amt, AccountHolder holder)
    {
@@ -9,16 +9,14 @@ public class Account
       balance = amt;
    }
 
-   public double deposit(double amt)
+   public void deposit(double amt)
    {
       balance += amt;
-      return balance;
    }
 
-   public double withdraw(double amt)
+   public void withdraw(double amt)
    {
       balance -= amt;
-      return balance;
    }
 
    public double getBalance()
